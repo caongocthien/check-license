@@ -1,4 +1,4 @@
-name: 'Check License'
+name: 'Check Node Package License'
 description: 'A GitHub Action to check the license of a package in a Node.js project'
 author: 'Thien Cao'
 inputs:
