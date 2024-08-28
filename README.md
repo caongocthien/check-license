@@ -5,7 +5,7 @@
 	  run: npm install
 	  
     - name: Check Node Package License
-      uses: caongocthien/check-license@1.0.0
+      uses: caongocthien/check-license@1.0.2
 	  with:
 	    - with:
 		    ## List of license trusted
