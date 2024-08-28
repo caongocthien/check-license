@@ -7,7 +7,7 @@
     - name: Check Node Package License
       uses: caongocthien/check-license@1.0.2
       with:
-	## List of license trusted
+	    ## List of license trusted
         licenses: 'MIT,ISC'
             
 
