@@ -1,0 +1,12 @@
+{
+  "name": "simple-log-action",
+  "version": "1.0.0",
+  "description": "A GitHub Action that logs a string input to the console",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@actions/core": "^1.2.6"
+  }
+}

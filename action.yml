@@ -1,0 +1,13 @@
+name: 'Check License'
+description: 'A GitHub Action to check the license of a package in a Node.js project'
+author: 'Thien Cao'
+inputs:
+  licenses:
+    description: 'The list of licenses allow in project'
+    required: true
+runs:
+  using: 'node16'
+  main: 'index.js'
+branding:
+  icon: 'link'
+  color: 'blue'
