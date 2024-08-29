@@ -6,7 +6,7 @@ inputs:
     description: 'The list of licenses allow in project'
     required: true
 runs:
-  using: 'node16'
+  using: 'node20'
   main: 'index.js'
 branding:
   icon: 'link'
