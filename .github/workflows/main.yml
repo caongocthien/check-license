@@ -1,0 +1,29 @@
+name: Auto release
+
+on:
+  push:
+    branches:
+      - release-test
+
+permissions:
+  contents: read
+  actions: write
+  deployments: write   # cần để job chạm environment (tạo deployment)
+
+jobs:
+  verify-base:
+    name: Waiting approval
+    runs-on: ubuntu-latest
+    # Chạm environment -> workflow sẽ PAUSE đợi Approve/Reject
+    environment:
+      name: release-approval
+    steps:
+      - name: Waiting approval
+        run: echo "event_name=${{ github.event_name }}"
+
+  continue_after_approval:
+    name: Continue after approval
+    needs: verify-base
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Approved — continue your flow here"
